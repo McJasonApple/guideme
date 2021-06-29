@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            app:cardElevation="2dp"
+            android:layout_margin="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:text="Legend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_head"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/circle"
+                    android:id="@+id/legend_idicator_1"
+                    app:layout_constraintStart_toStartOf="@+id/legend_head"
+                    app:layout_constraintTop_toTopOf="@+id/legend_level_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/legend_level_1"
+                    app:tint="@color/regeneration"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintVertical_bias="0.55" />
+
+            <TextView
+                android:id="@+id/legend_level_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Regeneration"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toBottomOf="@+id/legend_head" />
+
+            <ImageView
+                android:id="@+id/legend_idicator_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@+id/legend_level_2"
+                app:layout_constraintStart_toStartOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toTopOf="@+id/legend_level_2"
+                app:layout_constraintVertical_bias="0.55"
+                app:srcCompat="@drawable/circle"
+                app:tint="@color/grundlagen" />
+
+            <TextView
+                    android:text="Grundlagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_level_2"
+                    app:layout_constraintTop_toBottomOf="@+id/legend_idicator_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/legend_idicator_1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/legend_idicator_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@+id/legend_level_3"
+                app:layout_constraintStart_toStartOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toTopOf="@+id/legend_level_3"
+                app:layout_constraintVertical_bias="0.55"
+                app:srcCompat="@drawable/circle"
+                app:tint="@color/laktat" />
+
+            <TextView
+                    android:text="LAKTAT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_level_3"
+                    app:layout_constraintTop_toBottomOf="@+id/legend_idicator_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/legend_idicator_2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/legend_idicator_4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@+id/legend_level_4"
+                app:layout_constraintStart_toStartOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toTopOf="@+id/legend_level_4"
+                app:layout_constraintVertical_bias="0.55"
+                app:srcCompat="@drawable/circle"
+                app:tint="@color/v02max" />
+
+            <TextView
+                    android:text="VO2MAX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_level_4"
+                    app:layout_constraintTop_toBottomOf="@+id/legend_idicator_3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/legend_idicator_3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/legend_idicator_5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@+id/legend_level_5"
+                app:layout_constraintStart_toStartOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toTopOf="@+id/legend_level_5"
+                app:layout_constraintVertical_bias="0.55"
+                app:srcCompat="@drawable/circle"
+                app:tint="@color/anerob" />
+
+            <TextView
+                    android:text="Anerob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_level_5"
+                    app:layout_constraintTop_toBottomOf="@+id/legend_idicator_4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/legend_idicator_4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/legend_idicator_6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@+id/legend_level_6"
+                app:layout_constraintStart_toStartOf="@+id/legend_idicator_1"
+                app:layout_constraintTop_toTopOf="@+id/legend_level_6"
+                app:layout_constraintVertical_bias="0.55"
+                app:srcCompat="@drawable/circle"
+                app:tint="@color/sprint" />
+
+            <TextView
+                    android:text="Sprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/legend_level_6"
+                    app:layout_constraintTop_toBottomOf="@+id/legend_idicator_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/legend_idicator_5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/route_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="route_name"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/route_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="route_length"
+                app:layout_constraintStart_toStartOf="@+id/route_name"
+                app:layout_constraintTop_toBottomOf="@+id/route_name" />
+
+            <ImageView
+                android:id="@+id/route_img_level_1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                app:tint="@color/regeneration"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_1"
+                app:layout_constraintStart_toStartOf="@+id/route_length"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_1"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="route_level_1"
+                app:layout_constraintStart_toEndOf="@+id/route_img_level_1"
+                app:layout_constraintTop_toBottomOf="@+id/route_length" />
+
+            <ImageView
+                android:id="@+id/route_img_level_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:tint="@color/grundlagen"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_2"
+                app:layout_constraintEnd_toStartOf="@+id/route_txt_level_2"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_2"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="route_level_1"
+                app:layout_constraintEnd_toStartOf="@+id/route_img_level_3"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/route_txt_level_1"
+                app:layout_constraintTop_toBottomOf="@+id/route_length" />
+
+            <ImageView
+                android:id="@+id/route_img_level_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:tint="@color/laktat"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_3"
+                app:layout_constraintEnd_toStartOf="@+id/route_txt_level_3"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_3"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="route_level_1"
+                app:tint="@color/v02max"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/route_length" />
+
+            <ImageView
+                android:id="@+id/route_img_level_4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                app:tint="@color/v02max"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_4"
+                app:layout_constraintStart_toStartOf="@+id/route_length"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_4"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="route_level_1"
+                app:layout_constraintStart_toEndOf="@+id/route_img_level_1"
+                app:layout_constraintTop_toBottomOf="@+id/route_txt_level_1" />
+
+            <ImageView
+                android:id="@+id/route_img_level_5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:tint="@color/anerob"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_5"
+                app:layout_constraintEnd_toStartOf="@+id/route_txt_level_2"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_5"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="route_level_1"
+                app:layout_constraintEnd_toStartOf="@+id/route_img_level_3"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/route_txt_level_1"
+                app:layout_constraintTop_toBottomOf="@+id/route_txt_level_2" />
+
+            <ImageView
+                android:id="@+id/route_img_level_6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                app:tint="@color/sprint"
+                app:layout_constraintBottom_toBottomOf="@+id/route_txt_level_6"
+                app:layout_constraintEnd_toStartOf="@+id/route_txt_level_3"
+                app:layout_constraintTop_toTopOf="@+id/route_txt_level_6"
+                app:srcCompat="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/route_txt_level_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="route_level_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/route_txt_level_3" />
+
+            <TextView
+                android:id="@+id/route_txt_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Recognized Training: "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/route_txt_level_4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
